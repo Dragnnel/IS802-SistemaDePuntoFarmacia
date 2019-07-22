@@ -47,33 +47,22 @@ public class frmMenuPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         jl_tituloMenuPrincipal.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        jl_tituloMenuPrincipal.setForeground(new java.awt.Color(255, 255, 255));
         jl_tituloMenuPrincipal.setText("Sistema de Puntos IS802");
         getContentPane().add(jl_tituloMenuPrincipal);
-        jl_tituloMenuPrincipal.setBounds(110, 40, 570, 40);
-
-        panel_menuPrincipal.setLayout(null);
+        jl_tituloMenuPrincipal.setBounds(100, 30, 570, 40);
 
         btn_ClienteMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgenesProyecto/cliente.png"))); // NOI18N
         btn_ClienteMenu.setText("Cliente");
-        panel_menuPrincipal.add(btn_ClienteMenu);
-        btn_ClienteMenu.setBounds(52, 63, 166, 63);
 
         btn_PuntosMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgenesProyecto/gestionPuntos.png"))); // NOI18N
         btn_PuntosMenu.setText("Puntos");
-        panel_menuPrincipal.add(btn_PuntosMenu);
-        btn_PuntosMenu.setBounds(283, 56, 173, 77);
 
         btn_ReportesMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgenesProyecto/reporte.png"))); // NOI18N
         btn_ReportesMenu.setText("Reportes");
-        panel_menuPrincipal.add(btn_ReportesMenu);
-        btn_ReportesMenu.setBounds(52, 178, 166, 69);
 
         btn_configuracion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgenesProyecto/administrador.png"))); // NOI18N
         btn_configuracion.setText("Configuración");
         btn_configuracion.setToolTipText("");
-        panel_menuPrincipal.add(btn_configuracion);
-        btn_configuracion.setBounds(283, 178, 173, 69);
 
         btn_SalirMenuPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgenesProyecto/salirSistema.png"))); // NOI18N
         btn_SalirMenuPrincipal.setText("Salir");
@@ -82,13 +71,47 @@ public class frmMenuPrincipal extends javax.swing.JFrame {
                 btn_SalirMenuPrincipalActionPerformed(evt);
             }
         });
-        panel_menuPrincipal.add(btn_SalirMenuPrincipal);
-        btn_SalirMenuPrincipal.setBounds(174, 258, 161, 57);
+
+        javax.swing.GroupLayout panel_menuPrincipalLayout = new javax.swing.GroupLayout(panel_menuPrincipal);
+        panel_menuPrincipal.setLayout(panel_menuPrincipalLayout);
+        panel_menuPrincipalLayout.setHorizontalGroup(
+            panel_menuPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_menuPrincipalLayout.createSequentialGroup()
+                .addContainerGap(52, Short.MAX_VALUE)
+                .addGroup(panel_menuPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_menuPrincipalLayout.createSequentialGroup()
+                        .addGroup(panel_menuPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btn_ClienteMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn_ReportesMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(65, 65, 65)
+                        .addGroup(panel_menuPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(btn_PuntosMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn_configuracion))
+                        .addGap(44, 44, 44))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_menuPrincipalLayout.createSequentialGroup()
+                        .addComponent(btn_SalirMenuPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(165, 165, 165))))
+        );
+        panel_menuPrincipalLayout.setVerticalGroup(
+            panel_menuPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_menuPrincipalLayout.createSequentialGroup()
+                .addGap(56, 56, 56)
+                .addGroup(panel_menuPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn_PuntosMenu)
+                    .addComponent(btn_ClienteMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(45, 45, 45)
+                .addGroup(panel_menuPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btn_ReportesMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_configuracion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btn_SalirMenuPrincipal)
+                .addContainerGap(15, Short.MAX_VALUE))
+        );
 
         getContentPane().add(panel_menuPrincipal);
-        panel_menuPrincipal.setBounds(100, 150, 500, 330);
+        panel_menuPrincipal.setBounds(100, 120, 500, 330);
 
-        jLabelFondoMenuPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgenesProyecto/fondo4.jpg"))); // NOI18N
+        jLabelFondoMenuPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgenesProyecto/fondo-menuPrincial.jpg"))); // NOI18N
         jLabelFondoMenuPrincipal.setMaximumSize(new java.awt.Dimension(680, 530));
         jLabelFondoMenuPrincipal.setMinimumSize(new java.awt.Dimension(680, 530));
         jLabelFondoMenuPrincipal.setPreferredSize(new java.awt.Dimension(680, 530));
