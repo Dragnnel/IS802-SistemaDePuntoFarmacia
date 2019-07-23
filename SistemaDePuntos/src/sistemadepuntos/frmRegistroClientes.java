@@ -57,7 +57,6 @@ public class frmRegistroClientes extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         j_Botones = new javax.swing.JPanel();
         btn_guardarCliente = new javax.swing.JButton();
-        btn_editarCliente = new javax.swing.JButton();
         btn_menuInicio = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -205,7 +204,7 @@ public class frmRegistroClientes extends javax.swing.JFrame {
                 .addGroup(jP2_DatosClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jC_Sexo, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jDC_fechaNacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
         jP2_DatosClienteLayout.setVerticalGroup(
             jP2_DatosClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -278,38 +277,32 @@ public class frmRegistroClientes extends javax.swing.JFrame {
             }
         });
 
-        btn_editarCliente.setText("Editar");
-        btn_editarCliente.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        btn_editarCliente.addActionListener(new java.awt.event.ActionListener() {
+        btn_menuInicio.setText("Atrás");
+        btn_menuInicio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        btn_menuInicio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_editarClienteActionPerformed(evt);
+                btn_menuInicioActionPerformed(evt);
             }
         });
-
-        btn_menuInicio.setText("Menu inicio");
-        btn_menuInicio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         javax.swing.GroupLayout j_BotonesLayout = new javax.swing.GroupLayout(j_Botones);
         j_Botones.setLayout(j_BotonesLayout);
         j_BotonesLayout.setHorizontalGroup(
             j_BotonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(j_BotonesLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(87, 87, 87)
                 .addComponent(btn_guardarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btn_editarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
                 .addComponent(btn_menuInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(63, 63, 63))
         );
         j_BotonesLayout.setVerticalGroup(
             j_BotonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(j_BotonesLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(j_BotonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btn_guardarCliente, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
-                    .addComponent(btn_editarCliente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btn_menuInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGroup(j_BotonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn_menuInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_guardarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -323,13 +316,16 @@ public class frmRegistroClientes extends javax.swing.JFrame {
                         .addComponent(jP2_DatosCliente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(132, 132, 132))
                     .addComponent(j_Botones, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jL_etiquetaPrincipla, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jP_DatosDireccion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 378, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jP1_DatosCliente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jL_etiquetaPrincipla, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jP1_DatosCliente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap())))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jSeparator1)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -343,7 +339,7 @@ public class frmRegistroClientes extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jP_DatosDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(j_Botones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -380,9 +376,9 @@ public class frmRegistroClientes extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_primerNombreActionPerformed
 
-    private void btn_editarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_editarClienteActionPerformed
+    private void btn_menuInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_menuInicioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_editarClienteActionPerformed
+    }//GEN-LAST:event_btn_menuInicioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -427,7 +423,6 @@ public class frmRegistroClientes extends javax.swing.JFrame {
     private javax.swing.JLabel SegundoApelliido;
     private javax.swing.JLabel SegundoNombre;
     private javax.swing.JLabel Telefono;
-    private javax.swing.JButton btn_editarCliente;
     private javax.swing.JButton btn_guardarCliente;
     private javax.swing.JButton btn_menuInicio;
     private javax.swing.JTextField correoElectronico;

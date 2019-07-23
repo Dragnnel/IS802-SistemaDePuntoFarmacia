@@ -23,7 +23,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
@@ -31,15 +31,20 @@
                       <EmptySpace min="-2" pref="132" max="-2" attributes="0"/>
                   </Group>
                   <Component id="j_Botones" alignment="1" max="32767" attributes="0"/>
-                  <Component id="jL_etiquetaPrincipla" alignment="0" max="32767" attributes="0"/>
                   <Component id="jP_DatosDireccion" alignment="0" max="32767" attributes="0"/>
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                      <Component id="jSeparator1" min="-2" pref="378" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jL_etiquetaPrincipla" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jP1_DatosCliente" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jP1_DatosCliente" alignment="0" max="32767" attributes="0"/>
               </Group>
+          </Group>
+          <Group type="102" attributes="0">
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+              <Component id="jSeparator1" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -55,7 +60,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jP_DatosDireccion" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jSeparator1" min="-2" max="-2" attributes="0"/>
+              <Component id="jSeparator1" min="-2" pref="2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="j_Botones" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
@@ -272,7 +277,7 @@
                       <Component id="jC_Sexo" min="-2" pref="51" max="-2" attributes="0"/>
                       <Component id="jDC_fechaNacimiento" min="-2" pref="126" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="24" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -451,13 +456,11 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
                   <Component id="btn_guardarCliente" min="-2" pref="100" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="btn_editarCliente" min="-2" pref="100" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                   <Component id="btn_menuInicio" min="-2" pref="100" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -465,10 +468,9 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="btn_guardarCliente" pref="25" max="32767" attributes="0"/>
-                      <Component id="btn_editarCliente" alignment="0" max="32767" attributes="0"/>
-                      <Component id="btn_menuInicio" alignment="0" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="btn_menuInicio" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                      <Component id="btn_guardarCliente" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -488,9 +490,9 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_guardarClienteActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btn_editarCliente">
+        <Component class="javax.swing.JButton" name="btn_menuInicio">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Editar"/>
+            <Property name="text" type="java.lang.String" value="Atr&#xe1;s"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
                 <LineBorder/>
@@ -498,18 +500,8 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_editarClienteActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_menuInicioActionPerformed"/>
           </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="btn_menuInicio">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Menu inicio"/>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                <LineBorder/>
-              </Border>
-            </Property>
-          </Properties>
         </Component>
       </SubComponents>
     </Container>
