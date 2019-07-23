@@ -88,7 +88,7 @@ public class frmMenuPrincipal extends javax.swing.JFrame {
         getContentPane().add(panel_menuPrincipal);
         panel_menuPrincipal.setBounds(100, 150, 500, 330);
 
-        jLabelFondoMenuPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgenesProyecto/fondo4.jpg"))); // NOI18N
+        jLabelFondoMenuPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgenesProyecto/fondo-menuPrincial.jpg"))); // NOI18N
         jLabelFondoMenuPrincipal.setMaximumSize(new java.awt.Dimension(680, 530));
         jLabelFondoMenuPrincipal.setMinimumSize(new java.awt.Dimension(680, 530));
         jLabelFondoMenuPrincipal.setPreferredSize(new java.awt.Dimension(680, 530));
