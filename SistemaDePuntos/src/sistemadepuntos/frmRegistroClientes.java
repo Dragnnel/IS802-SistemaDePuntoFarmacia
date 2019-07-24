@@ -60,6 +60,7 @@ public class frmRegistroClientes extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Gestión cliente");
+        getContentPane().setLayout(null);
 
         SegundoNombre.setText("Segundo nombre:");
         SegundoNombre.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -219,6 +220,9 @@ public class frmRegistroClientes extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        getContentPane().add(jP1_DatosCliente);
+        jP1_DatosCliente.setBounds(10, 11, 433, 250);
+
         jL_TituloDireccion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jL_TituloDireccion.setText("Dirección");
         jL_TituloDireccion.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -270,6 +274,13 @@ public class frmRegistroClientes extends javax.swing.JFrame {
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
+        getContentPane().add(jP_DatosDireccion);
+        jP_DatosDireccion.setBounds(10, 267, 433, 148);
+        getContentPane().add(jSeparator1);
+        jSeparator1.setBounds(0, 426, 443, 2);
+
+        j_Botones.setLayout(null);
+
         btn_guardarCliente.setText("Guardar");
         btn_guardarCliente.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btn_guardarCliente.addActionListener(new java.awt.event.ActionListener() {
@@ -277,6 +288,8 @@ public class frmRegistroClientes extends javax.swing.JFrame {
                 btn_guardarClienteActionPerformed(evt);
             }
         });
+        j_Botones.add(btn_guardarCliente);
+        btn_guardarCliente.setBounds(77, 0, 100, 29);
 
         btn_menuInicio.setText("Atrás");
         btn_menuInicio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -285,57 +298,11 @@ public class frmRegistroClientes extends javax.swing.JFrame {
                 btn_menuInicioActionPerformed(evt);
             }
         });
+        j_Botones.add(btn_menuInicio);
+        btn_menuInicio.setBounds(249, 0, 100, 29);
 
-        javax.swing.GroupLayout j_BotonesLayout = new javax.swing.GroupLayout(j_Botones);
-        j_Botones.setLayout(j_BotonesLayout);
-        j_BotonesLayout.setHorizontalGroup(
-            j_BotonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(j_BotonesLayout.createSequentialGroup()
-                .addGap(77, 77, 77)
-                .addComponent(btn_guardarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(72, 72, 72)
-                .addComponent(btn_menuInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(72, Short.MAX_VALUE))
-        );
-        j_BotonesLayout.setVerticalGroup(
-            j_BotonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(j_BotonesLayout.createSequentialGroup()
-                .addGroup(j_BotonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_guardarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_menuInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(11, 11, 11))
-        );
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jSeparator1)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jP_DatosDireccion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jP1_DatosCliente, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addComponent(j_Botones, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jP1_DatosCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jP_DatosDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(j_Botones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(6, 6, 6))
-        );
+        getContentPane().add(j_Botones);
+        j_Botones.setBounds(22, 439, 421, 40);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
