@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package sistemadepuntos;
+
 /**
  *
  * @author bayro
@@ -65,7 +66,6 @@ public class frmRegistroClientes extends javax.swing.JFrame {
         setName("Registro Cliente"); // NOI18N
         setUndecorated(true);
         setPreferredSize(new java.awt.Dimension(490, 550));
-        getContentPane().setLayout(null);
 
         jP1_DatosCliente.setLayout(null);
 
@@ -210,11 +210,6 @@ public class frmRegistroClientes extends javax.swing.JFrame {
         jP1_DatosCliente.add(jP_DatosDireccion);
         jP_DatosDireccion.setBounds(0, 270, 460, 160);
 
-        getContentPane().add(jP1_DatosCliente);
-        jP1_DatosCliente.setBounds(30, 10, 470, 430);
-
-        j_Botones.setLayout(null);
-
         btn_guardarCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgenesProyecto/guardar.png"))); // NOI18N
         btn_guardarCliente.setText("Guardar");
         btn_guardarCliente.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -223,8 +218,6 @@ public class frmRegistroClientes extends javax.swing.JFrame {
                 btn_guardarClienteActionPerformed(evt);
             }
         });
-        j_Botones.add(btn_guardarCliente);
-        btn_guardarCliente.setBounds(30, 20, 160, 60);
 
         btn_menuInicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgenesProyecto/VolverMenu.png"))); // NOI18N
         btn_menuInicio.setText("Atrás");
@@ -234,11 +227,45 @@ public class frmRegistroClientes extends javax.swing.JFrame {
                 btn_menuInicioActionPerformed(evt);
             }
         });
-        j_Botones.add(btn_menuInicio);
-        btn_menuInicio.setBounds(250, 20, 160, 60);
 
-        getContentPane().add(j_Botones);
-        j_Botones.setBounds(30, 430, 430, 100);
+        javax.swing.GroupLayout j_BotonesLayout = new javax.swing.GroupLayout(j_Botones);
+        j_Botones.setLayout(j_BotonesLayout);
+        j_BotonesLayout.setHorizontalGroup(
+            j_BotonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(j_BotonesLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(btn_guardarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(60, 60, 60)
+                .addComponent(btn_menuInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        j_BotonesLayout.setVerticalGroup(
+            j_BotonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(j_BotonesLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(j_BotonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btn_guardarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_menuInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(j_Botones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jP1_DatosCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 470, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(430, 430, 430)
+                .addComponent(j_Botones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(jP1_DatosCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 430, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
