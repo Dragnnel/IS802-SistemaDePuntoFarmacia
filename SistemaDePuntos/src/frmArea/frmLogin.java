@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sistemadepuntos;
+package frmArea;
 
 import javax.swing.JOptionPane;
 
@@ -43,10 +43,8 @@ public class frmLogin extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Login Sistema De Puntos");
-        setMaximumSize(new java.awt.Dimension(488, 541));
         setMinimumSize(new java.awt.Dimension(488, 541));
         setName("Loguin del Sistema de Puntos"); // NOI18N
-        setPreferredSize(new java.awt.Dimension(488, 541));
         setResizable(false);
         getContentPane().setLayout(null);
 

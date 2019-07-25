@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sistemadepuntos;
+package frmArea;
 
 /**
  *
@@ -39,11 +39,9 @@ public class frmMenuPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Munu Principal");
-        setMaximumSize(new java.awt.Dimension(680, 530));
         setMinimumSize(new java.awt.Dimension(680, 530));
         setName("Menu Princial Sistema de Puntos"); // NOI18N
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(680, 530));
         getContentPane().setLayout(null);
 
         jl_tituloMenuPrincipal.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N

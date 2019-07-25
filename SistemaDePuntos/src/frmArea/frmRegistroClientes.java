@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sistemadepuntos;
+package frmArea;
 
 /**
  *
@@ -61,11 +61,9 @@ public class frmRegistroClientes extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Gestión cliente");
-        setMaximumSize(new java.awt.Dimension(490, 550));
         setMinimumSize(new java.awt.Dimension(490, 550));
         setName("Registro Cliente"); // NOI18N
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(490, 550));
 
         jP1_DatosCliente.setLayout(null);
 

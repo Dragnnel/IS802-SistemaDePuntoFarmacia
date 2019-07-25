@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sistemadepuntos;
+package frmArea;
 
 /**
  *
  * @author Luis Estrada
  */
-public class frmConfiguracionPorcentajePuntos extends javax.swing.JFrame {
+public class frmSubMenuPuntos extends javax.swing.JFrame {
 
     /**
-     * Creates new form frmConfiguracionPorcentajePuntos
+     * Creates new form frmSubMenuPuntos
      */
-    public frmConfiguracionPorcentajePuntos() {
+    public frmSubMenuPuntos() {
         initComponents();
     }
 
@@ -60,20 +60,20 @@ public class frmConfiguracionPorcentajePuntos extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(frmConfiguracionPorcentajePuntos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmSubMenuPuntos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(frmConfiguracionPorcentajePuntos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmSubMenuPuntos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(frmConfiguracionPorcentajePuntos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmSubMenuPuntos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(frmConfiguracionPorcentajePuntos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmSubMenuPuntos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new frmConfiguracionPorcentajePuntos().setVisible(true);
+                new frmSubMenuPuntos().setVisible(true);
             }
         });
     }

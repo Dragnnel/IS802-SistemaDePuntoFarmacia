@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sistemadepuntos;
+package frmArea;
 
 /**
  *
@@ -113,7 +113,7 @@ public class frmConfiguracion extends javax.swing.JFrame {
         );
 
         getContentPane().add(jPanel2);
-        jPanel2.setBounds(80, 120, 600, 100);
+        jPanel2.setBounds(80, 120, 600, 0);
 
         jButton6.setText("jButton6");
 
@@ -149,7 +149,7 @@ public class frmConfiguracion extends javax.swing.JFrame {
         );
 
         getContentPane().add(jPanel3);
-        jPanel3.setBounds(60, 250, 610, 100);
+        jPanel3.setBounds(60, 250, 610, 0);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

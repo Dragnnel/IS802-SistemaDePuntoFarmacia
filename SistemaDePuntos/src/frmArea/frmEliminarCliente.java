@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sistemadepuntos;
+package frmArea;
 
 /**
  *
  * @author Luis Estrada
  */
-public class frmLoginConfiguracion extends javax.swing.JFrame {
+public class frmEliminarCliente extends javax.swing.JFrame {
 
     /**
-     * Creates new form frmLoginConfiguracion
+     * Creates new form frmEliminarCliente
      */
-    public frmLoginConfiguracion() {
+    public frmEliminarCliente() {
         initComponents();
     }
 
@@ -60,20 +60,20 @@ public class frmLoginConfiguracion extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(frmLoginConfiguracion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmEliminarCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(frmLoginConfiguracion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmEliminarCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(frmLoginConfiguracion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmEliminarCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(frmLoginConfiguracion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmEliminarCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new frmLoginConfiguracion().setVisible(true);
+                new frmEliminarCliente().setVisible(true);
             }
         });
     }
